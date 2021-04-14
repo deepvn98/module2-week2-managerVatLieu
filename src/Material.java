@@ -36,6 +36,15 @@ public abstract class Material {
     public void setCost(int cost) {
         this.cost = cost;
     }
+
+    public LocalDate getManufacturingDate() {
+        return manufacturingDate;
+    }
+
+    public void setManufacturingDate(LocalDate manufacturingDate) {
+        this.manufacturingDate = manufacturingDate;
+    }
+
     public abstract double getAmount();
     public abstract LocalDate getExpiryDate();
 
